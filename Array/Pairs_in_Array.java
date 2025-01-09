@@ -9,7 +9,7 @@ public class Pairs_in_Array {
         }
     }
     public static void main(String[] args) {
-        int arr[]={2,3,5,8};
+        int arr[]={2,4,6,8,10};
         printPairs(arr);
     }
 }
