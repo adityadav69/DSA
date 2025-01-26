@@ -1,0 +1,112 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "LeftShiftOperator",
+            "request": "launch",
+            "mainClass": "LeftShiftOperator",
+            "projectName": "Bit Manipulation_a8a93660"
+        },
+        {
+            "type": "java",
+            "name": "RightShiftOperator",
+            "request": "launch",
+            "mainClass": "RightShiftOperator",
+            "projectName": "Bit Manipulation_a8a93660"
+        },
+        {
+            "type": "java",
+            "name": "andOperator",
+            "request": "launch",
+            "mainClass": "andOperator",
+            "projectName": "Bit Manipulation_a8a93660"
+        },
+        {
+            "type": "java",
+            "name": "clearLast_ithBit",
+            "request": "launch",
+            "mainClass": "clearLast_ithBit",
+            "projectName": "Bit Manipulation_a8a93660"
+        },
+        {
+            "type": "java",
+            "name": "clear_ith_place",
+            "request": "launch",
+            "mainClass": "clear_ith_place",
+            "projectName": "Bit Manipulation_a8a93660"
+        },
+        {
+            "type": "java",
+            "name": "countSetBit",
+            "request": "launch",
+            "mainClass": "countSetBit",
+            "projectName": "Bit Manipulation_a8a93660"
+        },
+        {
+            "type": "java",
+            "name": "get_ith_place",
+            "request": "launch",
+            "mainClass": "get_ith_place",
+            "projectName": "Bit Manipulation_a8a93660"
+        },
+        {
+            "type": "java",
+            "name": "oddEven",
+            "request": "launch",
+            "mainClass": "oddEven",
+            "projectName": "Bit Manipulation_a8a93660"
+        },
+        {
+            "type": "java",
+            "name": "oneComplement",
+            "request": "launch",
+            "mainClass": "oneComplement",
+            "projectName": "Bit Manipulation_a8a93660"
+        },
+        {
+            "type": "java",
+            "name": "orOperator",
+            "request": "launch",
+            "mainClass": "orOperator",
+            "projectName": "Bit Manipulation_a8a93660"
+        },
+        {
+            "type": "java",
+            "name": "powerOf2orNot",
+            "request": "launch",
+            "mainClass": "powerOf2orNot",
+            "projectName": "Bit Manipulation_a8a93660"
+        },
+        {
+            "type": "java",
+            "name": "set_ith_place",
+            "request": "launch",
+            "mainClass": "set_ith_place",
+            "projectName": "Bit Manipulation_a8a93660"
+        },
+        {
+            "type": "java",
+            "name": "update_ith_bit",
+            "request": "launch",
+            "mainClass": "update_ith_bit",
+            "projectName": "Bit Manipulation_a8a93660"
+        },
+        {
+            "type": "java",
+            "name": "xor",
+            "request": "launch",
+            "mainClass": "xor",
+            "projectName": "Bit Manipulation_a8a93660"
+        }
+    ]
+}
