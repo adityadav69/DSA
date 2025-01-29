@@ -26,7 +26,7 @@ public class Anagram {
         String s1="race";
         String s2="care";
         if(check(s1, s2)){
-            System.out.println("Both are anagrams");
+            System.out.println("Both strings are anagrams");
         }
         else{
             System.out.println("Not anagram");
