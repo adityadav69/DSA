@@ -11,7 +11,7 @@ public class StringPalindrome {
     public static void main(String[] args) {
         String s="noon";
         if(checkPalindrome(s)==true){
-            System.out.println("String are palindrome");
+            System.out.println("palindrome");
         }
         else{
             System.out.println("Not palindrome");
