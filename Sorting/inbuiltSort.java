@@ -7,7 +7,7 @@ public class inbuiltSort {
     }
     public static void main(String[] args) {
         
-        int arr[]={3,4,1,4,63,1};
+        int arr[]={3,4,1,4,63,11,12};
         // Arrays.sort(arr);
         print(arr);
         // If we want to sort the array with some given index then
