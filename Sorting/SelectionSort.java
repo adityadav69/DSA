@@ -19,7 +19,7 @@ public class SelectionSort {
         }
     }
     public static void main(String[] args) {
-        int arr[]={3,4,63,1,2,1};
+        int arr[]={3,4,63,1,2,11,21,11};
         sort(arr);
         print(arr);
     }
