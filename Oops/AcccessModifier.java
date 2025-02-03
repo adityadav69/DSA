@@ -12,7 +12,7 @@ public class AcccessModifier {
 class Student{
     String name;
     int roll_no;
-    private String pass;
+    // private String pass;
 }
 
 /*

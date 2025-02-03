@@ -1,4 +1,4 @@
-public class basicoops{
+public class Basicoops{
     // class Student{
 
     // }// When we intitalize class here then we can't create object of this class from main function because main functioon is static function if we want then we have to make this class as static
