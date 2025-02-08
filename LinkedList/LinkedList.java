@@ -18,6 +18,7 @@ public class LinkedList {
 
         if(head==null){
             head=tail=newNode;
+            size++;
             return;
         }
 
@@ -29,6 +30,7 @@ public class LinkedList {
         Node newNode=new Node(data);
         if(head==null){
             head=tail=newNode;
+            size++;
             return;
         }
 
@@ -38,6 +40,10 @@ public class LinkedList {
     }
 
     public void addIndex(int index,int data){
+        if(index>size || index<0){
+            System.out.println("Please enter a index in the size of ll");
+            return;
+        }
         if(index==0){
             addFirst(data);
             return;
@@ -52,6 +58,48 @@ public class LinkedList {
         newNode.next=temp.next;
         temp.next=newNode;
         size++;
+    }
+
+    public int removeFirst(){
+        if(size==0){
+            System.out.println("There is no Element in the ll to remove");
+            return Integer.MIN_VALUE;
+        }
+        else if(size==1){
+            int val=head.data;
+            head=head.next;
+            size=0;
+            return val;
+        }
+        int val=head.data;
+        head=head.next;
+        size--;
+        return val;
+    }
+    public int removeLast(){
+        if(size==0){
+            System.out.println("There is no Element in the ll to remove");
+            return Integer.MIN_VALUE;
+        }
+        else if(size==1){
+            int val=head.data;
+            head=head.next;
+            size=0;
+            return val;
+        }
+        int i=0;
+        Node temp=head;
+        while (i<size-1) {
+            temp=temp.next;
+            i++;
+        }
+
+        int val=tail.data;
+        temp.next=null;
+        tail=temp;
+        size--;
+        return val;
+    
     }
 
     public void print(){
@@ -86,6 +134,10 @@ public class LinkedList {
         ll.print();
         ll.addIndex(3, 999);
         ll.print();
-        System.out.println(ll.size);
+        System.out.println(size);
+        System.out.println(ll.removeFirst());
+        ll.print();
+        System.out.println(size);
+
     }
 }
