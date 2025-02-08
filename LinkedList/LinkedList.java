@@ -133,6 +133,38 @@ public class LinkedList {
         return helper(head,key,0);
     }
 
+    public int removeNthNode(int n) {
+        if (head == null || n <= 0 || n > size) {
+            System.out.println("Invalid input");
+            return Integer.MIN_VALUE;  // Edge case: invalid input
+        }
+    
+        // If we need to remove the first node (n == 1)
+        if (n == 1) {
+            int val = head.data;
+            head = head.next;  // Move the head pointer to the next node
+            size--;
+            return val;
+        }
+    
+        Node temp = head;
+        int i = 1;
+        int iToFind=size-n;
+        // Move temp to the (n-1)-th node
+        while (i < iToFind) {
+            temp = temp.next;
+            i++;
+        }
+    
+        // Remove the nth node
+        int val = temp.next.data;  // Get the value of the node to be removed
+        temp.next = temp.next.next;  // Link the (n-1)-th node to (n+1)-th node
+        size--;
+    
+        return val;  // Return the value of the removed node
+    }
+    
+
     public void print() {
         if (head == null) {
             System.out.println("Linked List is Empty");
@@ -171,6 +203,10 @@ public class LinkedList {
         System.out.println(size);
         System.out.println(ll.search(999));
         System.out.println(ll.recursiveSearch(999));
+        ll.print();
+        System.out.println("After removing nth from end");
+        ll.removeNthNode(3);
+        ll.print();
 
     }
 }
