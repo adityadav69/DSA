@@ -23,6 +23,10 @@ public class ArrayInsert {
 
         print(arr);
         push(3, arr,45);
+        push(3, arr,45);
+        push(3, arr,45);
+        push(3, arr,45);
+
         System.out.println("After insertion");
         print(arr);
     }
