@@ -63,6 +63,9 @@ int main(){
     postorder(p);
     printf("\n");
     inorder(p);
+    inorder(p);
+    inorder(p);
+
     return 0;
 
 }
