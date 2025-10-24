@@ -35,14 +35,34 @@ void postorder(struct node * root){
     printf("%d",root->data);
 }
 
+static int prev=-999;
+
 void inorder(struct node * root){
     if(root==NULL){
         return;
     }
     inorder(root->left);
+   
     printf("%d",root->data);
     inorder(root->right);
 }
+
+int  check(struct node * root){
+    if(root==NULL){
+        return;
+    }
+    inorder(root->left);
+    if(root->data<prev){
+    prev=root->data;
+    inorder(root->right);
+   }
+   else{
+    return 0;
+   }
+
+   
+}
+
 
 int main(){
 
@@ -63,8 +83,7 @@ int main(){
     postorder(p);
     printf("\n");
     inorder(p);
-    inorder(p);
-    inorder(p);
+    printf("\n");
 
     return 0;
 
