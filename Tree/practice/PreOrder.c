@@ -84,6 +84,9 @@ int main(){
     printf("\n");
     inorder(p);
     printf("\n");
+    inorder(p);
+    printf("\n")
+
 
     return 0;
 
