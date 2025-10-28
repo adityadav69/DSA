@@ -53,8 +53,6 @@ public class checkBinarySearchTree {
         p2.right=p4;
         inorder(root);
         System.out.println(checkBinarySearchTrees(root));
-        System.out.println(checkBinarySearchTrees(root));
-        System.out.println(checkBinarySearchTrees(root));
 
     }
 }
