@@ -52,7 +52,12 @@ public class checkBinarySearchTree {
         p2.left=p3;
         p2.right=p4;
         inorder(root);
+        inorder(root);
+
         System.out.println(checkBinarySearchTrees(root));
+        System.out.println(checkBinarySearchTrees(root));
+        System.out.println(checkBinarySearchTrees(root));
+
 
     }
 }
