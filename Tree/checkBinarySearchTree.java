@@ -40,22 +40,18 @@ public class checkBinarySearchTree {
         System.out.print(root.data+" ");
         inorder(root.right);
     }
-
     public static void main(String[] args) {
-        Node root=new Node(6);
-        Node p2=new Node(3);
-        Node p3=new Node(2);
-        Node p4=new Node(9);
-        Node p5=new Node(3);
+        Node root=new Node(5);
+        Node p2=new Node(4);
+        Node p3=new Node(7);
+        Node p4=new Node(10);
+        Node p5=new Node(8);
         root.left=p2;
         root.right=p5;
-        p2.left=p3;
-        p2.right=p4;
+        p5.left=p3;
+        p5.right=p4;
         inorder(root);
         inorder(root);
-
-        System.out.println(checkBinarySearchTrees(root));
-        System.out.println(checkBinarySearchTrees(root));
         System.out.println(checkBinarySearchTrees(root));
 
 
