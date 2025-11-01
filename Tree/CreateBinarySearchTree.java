@@ -32,10 +32,12 @@ public class CreateBinarySearchTree {
     }
 
     public static void main(String[] args) {
-        int arr[]={6,3,17,5,14,28,2,1,20,14};
+        int arr[]={6,3,17,5,14,28,2,1,2,54};
         Node root=null;
         for(int i=0;i<arr.length;i++){
             root=createBST(root,arr[i]);
+            // root=createBST(root,arr[i]);
+
         }
         inOrder(root);
         inOrder(root);
