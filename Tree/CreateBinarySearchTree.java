@@ -42,6 +42,9 @@ public class CreateBinarySearchTree {
         inOrder(root);
         inOrder(root);
         inOrder(root);
+        inOrder(root);
+
+        inOrder(root);
         
 
     }
