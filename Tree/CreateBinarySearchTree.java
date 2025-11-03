@@ -22,6 +22,20 @@ public class CreateBinarySearchTree {
         return root;
     }
 
+    static Node insert(Node root, int data){
+        if(root==null){
+            Node newNode=new Node(data);
+            return newNode;
+        }
+        if(data<root.data){
+            root.left=insert(root.left, data);
+        }
+        else{
+            root.right=insert(root.right, data);
+        }
+        return root;
+    }
+
     static void inOrder(Node root){
         if(root==null){
             return;
@@ -32,20 +46,18 @@ public class CreateBinarySearchTree {
     }
 
     public static void main(String[] args) {
-        int arr[]={6,3,17,5,14,28,2,1,2,54};
+        // int arr[]={6,3,17,5,14,28,2,1,12,16};
+        int arr[]={3,7,4,1,6,8};
         Node root=null;
         for(int i=0;i<arr.length;i++){
             root=createBST(root,arr[i]);
-            // root=createBST(root,arr[i]);
+        }   
 
-        }
-        inOrder(root);
-        inOrder(root);
-        inOrder(root);
-        inOrder(root);
 
         inOrder(root);
-        
+        root=insert(root, 0);
+        System.out.println();
+        inOrder(root);
 
     }
 }
