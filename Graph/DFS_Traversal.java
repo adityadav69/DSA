@@ -36,6 +36,9 @@ public class DFS_Traversal {
         boolean visited[]=new boolean[v];
         ArrayList<Integer>ans=new ArrayList<>();
         System.out.println(dfs(0, graph, ans, visited));
+        System.out.println(dfs(1, graph, ans, visited));
+        System.out.println(dfs(0, graph, ans, visited));
+
 
 
     }
